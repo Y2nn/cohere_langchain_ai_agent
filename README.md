@@ -19,8 +19,6 @@ Creating a Python REPL tool is straightforward: provide the Tool class with a Py
 ### Creating and executing the AI agent
 We will combine everything to create the multi-step AI agent using the .create_cohere_react_agent() function, the Cohere model client, tools, and prompt template. To execute our AI agent, we will use the AgentExecutor class by providing it with the agent object and tools.
 
-### Testing the agent
-
 ### Conclusion
 
 To wrap it up, we built a proper AI agent that takes user queries, searches the internet for the latest data, and generates visualizations using Python REPL.
