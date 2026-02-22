@@ -32,7 +32,7 @@ cohere_api_key = os.environ.get('COHERE_API_KEY')
 
 # Use the LangChain Python API to create a chat client for the AI agent.
 chat = ChatCohere(
-    model='command-r-plus',  # Command R+ as the language model
+    model='command-r-plus',  # Command R+ as the language model is deprecated
     temperature=0.7,
     cohere_api_key=cohere_api_key
 )
@@ -72,7 +72,7 @@ class ToolInput(BaseModel):
 # Modify the argument schema of the Python REPL object
 repl_tool.args_schema = ToolInput
 
-# matplotlib langchain-tavily
+
 if __name__ == '__main__':
     prompt = ChatPromptTemplate.from_template('{input}')
 
